@@ -13,8 +13,6 @@ export class HomepageWhatisComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.whatIsData);
-
     this.playButtonUrl = this.whatIsData.includes.Asset[0].fields.file.url;
   }
 

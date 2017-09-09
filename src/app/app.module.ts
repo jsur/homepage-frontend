@@ -11,6 +11,7 @@ import { HomepageIconsComponent } from './components/homepage/homepage-icons/hom
 
 import { CmsContentService } from './services/cms-content.service';
 import { HomepageWhatisComponent } from './components/homepage/homepage-whatis/homepage-whatis.component';
+import { HomepageComparisonComponent } from './components/homepage/homepage-comparison/homepage-comparison.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HomepageWhatisComponent } from './components/homepage/homepage-whatis/h
     NotFoundComponent,
     HomepageHeaderComponent,
     HomepageIconsComponent,
-    HomepageWhatisComponent
+    HomepageWhatisComponent,
+    HomepageComparisonComponent
   ],
   imports: [
     BrowserModule,

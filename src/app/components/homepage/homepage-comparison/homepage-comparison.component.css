@@ -1,0 +1,45 @@
+.comparison-container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.comparison-container h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.other {
+  font-weight: 200;
+  color: gray;
+}
+
+.consentio {
+  font-weight: bold;
+}
+
+table {
+  width: 50%;
+  margin: 1rem auto 4rem auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+tr {
+  height: 4rem;
+}
+
+th, td {
+  border: 1px solid #e5e5e5;
+}
+
+td {
+  width: 25%;
+  color: #484848;
+  text-align: center;
+}
+
+td img {
+  width: 16px;
+  height: 16px;
+}
