@@ -15,6 +15,12 @@
   text-transform: uppercase;
   padding-top: 4rem;
   letter-spacing: 1.7px;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+.whatis-content img {
+  margin: 2rem 0;
 }
 
 .whatis-content p {

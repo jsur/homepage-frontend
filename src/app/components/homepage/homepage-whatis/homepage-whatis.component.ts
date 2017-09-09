@@ -8,10 +8,14 @@ import { Component, Input, OnInit } from '@angular/core';
 export class HomepageWhatisComponent implements OnInit {
   @Input() whatIsData;
 
+  playButtonUrl: string;
+
   constructor() { }
 
   ngOnInit() {
     console.log(this.whatIsData);
+
+    this.playButtonUrl = this.whatIsData.includes.Asset[0].fields.file.url;
   }
 
 }
