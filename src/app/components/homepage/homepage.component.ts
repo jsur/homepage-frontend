@@ -10,6 +10,7 @@ export class HomepageComponent implements OnInit {
 
   header: Object;
   productDesc: Object;
+  whatIs: Object;
 
   constructor(private cmscontent: CmsContentService) { }
 
@@ -18,7 +19,7 @@ export class HomepageComponent implements OnInit {
       data => {
         this.header = data.header;
         this.productDesc = data.productDesc;
-        // console.log(data.productDesc);
+        this.whatIs = data.whatIs;
       },
       err => {
         console.log(err);

@@ -10,6 +10,7 @@ import { HomepageHeaderComponent } from './components/homepage/homepage-header/h
 import { HomepageIconsComponent } from './components/homepage/homepage-icons/homepage-icons.component';
 
 import { CmsContentService } from './services/cms-content.service';
+import { HomepageWhatisComponent } from './components/homepage/homepage-whatis/homepage-whatis.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CmsContentService } from './services/cms-content.service';
     HomepageComponent,
     NotFoundComponent,
     HomepageHeaderComponent,
-    HomepageIconsComponent
+    HomepageIconsComponent,
+    HomepageWhatisComponent
   ],
   imports: [
     BrowserModule,
