@@ -1,10 +1,14 @@
-<img src="{{headerData?.includes.Asset[0].fields.file.url}}" alt="">
-<ul>
-  <li>Start</li>
-  <li>What we do</li>
-  <li>Security</li>
-  <li>Who we are</li>
-</ul>
-<h1>{{headerData?.items[0].fields.companyName}}</h1>
-<p>{{headerData?.items[0].fields.mainHeaderDescription}}</p>
-<button type="button" name="button">{{headerData?.items[0].fields.headerButtonText}}</button>
+<div class="header-container">
+  <img src="{{headerData?.includes.Asset[0].fields.file.url}}" alt="">
+  <ul>
+    <li class="nav-item" (click)="selectNavLink($event)">Start</li>
+    <li class="nav-item" (click)="selectNavLink($event)">What we do</li>
+    <li class="nav-item" (click)="selectNavLink($event)">Security</li>
+    <li class="nav-item" (click)="selectNavLink($event)">Who we are</li>
+  </ul>
+  <div class="header-content-container">
+    <h1>{{headerData?.items[0].fields.companyName}}</h1>
+    <p>{{headerData?.items[0].fields.mainHeaderDescription}}</p>
+    <button type="button" name="button">{{headerData?.items[0].fields.headerButtonText}}</button>
+  </div>
+</div>

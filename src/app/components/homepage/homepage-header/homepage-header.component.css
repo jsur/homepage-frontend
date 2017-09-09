@@ -1,0 +1,65 @@
+.header-container {
+  background-image: url('http://media.gettyimages.com/photos/portrait-of-a-mature-man-smiling-at-the-camera-picture-id518960172?s=170667a&w=1007');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 70vh;
+}
+
+img {
+  margin-left: 1rem;
+  margin-top: 2.5rem;
+}
+
+ul {
+  display: inline;
+  float: right;
+  margin-top: 4rem;
+}
+
+li {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: #ffffff;
+  display: inline;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.li-selected {
+  padding-bottom: 1rem;
+  border-bottom: 4px solid white;
+}
+
+.header-content-container {
+  color: white;
+  margin-left: 16%;
+  margin-top: 10%;
+}
+
+.header-content-container h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 2px;
+  width: 60%;
+}
+
+.header-content-container p {
+  width: 40%;
+  margin-bottom: 2rem;
+  letter-spacing: 0.7px;
+}
+
+.header-content-container button {
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom, #53b7ff, #2980ff);
+  border: none;
+  padding: 1rem 0.5rem;
+  width: 120px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 1.5rem;
+}

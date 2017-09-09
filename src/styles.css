@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+  font-family: 'Roboto';
+  font-size: 10px;
+  margin: 0px;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+p {
+  font-size: 1.4rem;
+}
