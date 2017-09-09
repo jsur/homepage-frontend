@@ -12,6 +12,7 @@ export class HomepageComponent implements OnInit {
   productDesc: Object;
   whatIs: Object;
   comparison: Object;
+  simpleProcess: Object;
 
   constructor(private cmscontent: CmsContentService) { }
 
@@ -22,6 +23,8 @@ export class HomepageComponent implements OnInit {
         this.productDesc = data.productDesc;
         this.whatIs = data.whatIs;
         this.comparison = data.comparison;
+        this.simpleProcess = data.simpleProcessHeader;
+        this.simpleProcess['cards'] = data.simpleProcessCards;
       },
       err => {
         console.log(err);

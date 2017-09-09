@@ -1,0 +1,71 @@
+.simple-process-container {
+  background-color: #f9f9f9;
+  min-height: 40vh;
+  border-top: 1px solid #e5e5e5;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.simple-process-container h2 {
+  text-transform: uppercase;
+  letter-spacing: 1.7px;
+}
+
+.card {
+  width: 60%;
+  height: 200px;
+  border-radius: 7px;
+  background-image: linear-gradient(to bottom, #53b7ff, #2980ff);
+  margin: 2rem auto;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-flipped {
+  background: white;
+}
+
+.flipside {
+  display: none;
+}
+
+.card-header {
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.7px;
+  width: 30%;
+  margin: 2rem auto;
+}
+
+.card-orderby-circle {
+  width: 4rem;
+  padding: 0.8rem;
+  margin: 0 auto;
+  border: 1.5px solid white;
+  border-radius: 50%;
+}
+
+.card-orderby {
+  font-size: 3.5rem;
+}
+
+/* Mobile first queries */
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}

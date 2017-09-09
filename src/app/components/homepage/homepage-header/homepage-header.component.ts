@@ -15,7 +15,7 @@ export class HomepageHeaderComponent {
     const navItems = document.querySelectorAll('.nav-item');
 
     Array.from(navItems).forEach(function(item) {
-      if(item.classList.contains('li-selected')) {
+      if (item.classList.contains('li-selected')) {
         item.classList.remove('li-selected');
       }
     });
