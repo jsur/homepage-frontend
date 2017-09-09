@@ -3,7 +3,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 70vh;
+  min-height: 65vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -12,18 +15,7 @@ img {
 }
 
 ul {
-  display: inline;
-  float: right;
-  margin-top: 4rem;
-}
-
-li {
-  font-size: 1rem;
-  letter-spacing: 1px;
-  color: #ffffff;
-  display: inline;
-  margin: 0 1rem;
-  cursor: pointer;
+  display: none;
 }
 
 .li-selected {
@@ -33,8 +25,7 @@ li {
 
 .header-content-container {
   color: white;
-  margin-left: 16%;
-  margin-top: 10%;
+  padding: 3rem;
 }
 
 .header-content-container h1 {
@@ -42,11 +33,10 @@ li {
   font-weight: bold;
   line-height: 1;
   letter-spacing: 2px;
-  width: 60%;
+  font-size: 3rem;
 }
 
 .header-content-container p {
-  width: 40%;
   margin-bottom: 2rem;
   letter-spacing: 0.7px;
 }
@@ -57,9 +47,66 @@ li {
   border: none;
   padding: 1rem 0.5rem;
   width: 120px;
+  height: 50px;
   color: white;
   font-weight: bold;
   letter-spacing: 1px;
   text-align: center;
   font-size: 1.5rem;
+  margin-top: 2rem;
 }
+
+.button-container {
+  text-align: center;
+}
+
+/* Mobile first queries */
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+
+  .button-container {
+    text-align: left;
+  }
+
+  ul {
+    display: inline;
+    float: right;
+    margin-top: 4rem;
+  }
+
+  li {
+    display: inline;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin: 0 1rem;
+    cursor: pointer;
+  }
+
+  .header-content-container {
+    margin-left: 16%;
+    margin-top: 10%;
+  }
+
+  .header-content-container h1 {
+    width: 60%;
+  }
+
+  .header-content-container p {
+    width: 40%;
+  }
+
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}

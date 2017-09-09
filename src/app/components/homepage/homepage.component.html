@@ -1,2 +1,2 @@
-<app-homepage-header [headerData]="header"></app-homepage-header>
-<app-homepage-icons></app-homepage-icons>
+<app-homepage-header *ngIf="header" [headerData]="header"></app-homepage-header>
+<app-homepage-icons *ngIf="productDesc" [productDescData]="productDesc"></app-homepage-icons>

@@ -8,16 +8,17 @@ import { CmsContentService } from '../../services/cms-content.service';
 })
 export class HomepageComponent implements OnInit {
 
-  constructor(private cmscontent: CmsContentService) { }
-
   header: Object;
   productDesc: Object;
+
+  constructor(private cmscontent: CmsContentService) { }
 
   ngOnInit() {
     this.cmscontent.homepageContent().subscribe(
       data => {
         this.header = data.header;
-        console.log(this.header);
+        this.productDesc = data.productDesc;
+        // console.log(data.productDesc);
       },
       err => {
         console.log(err);
