@@ -1,0 +1,40 @@
+<div class="in-beta-container">
+  <h2>{{inBetaData.items[0].fields.header}}</h2>
+  <p>{{inBetaData.items[0].fields.betaDescription}}</p>
+  <form class="in-beta-form" #betaInterest="ngForm" (ngSubmit)="submit(betaInterest)">
+    <input
+      type="text"
+      name="firstname"
+      value=""
+      placeholder="Name"
+      required
+      [(ngModel)]="newSubmitter.firstname"
+      >
+    <input
+      type="text"
+      name="lastname"
+      value=""
+      placeholder="Surname"
+      required
+      [(ngModel)]="newSubmitter.lastname"
+      >
+    <input
+      type="email"
+      name="email"
+      value=""
+      placeholder="Email"
+      required
+      [(ngModel)]="newSubmitter.email"
+      >
+    <input
+      type="phone"
+      name="phone"
+      value=""
+      placeholder="Phone number"
+      required
+      minlength="3"
+      [(ngModel)]="newSubmitter.phone"
+      >
+    <button name="submit" [disabled]="!betaInterest.valid">Request access</button>
+  </form>
+</div>

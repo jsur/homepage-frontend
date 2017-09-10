@@ -14,6 +14,7 @@ export class HomepageComponent implements OnInit {
   comparison: Object;
   simpleProcess: Object;
   customersSay: Object;
+  inBeta: Object;
 
   constructor(private cmscontent: CmsContentService) { }
 
@@ -28,6 +29,7 @@ export class HomepageComponent implements OnInit {
         this.simpleProcess['cards'] = data.simpleProcessCards;
         this.customersSay = data.customersSayHeader;
         this.customersSay['cards'] = data.customersSayCards;
+        this.inBeta = data.inBeta;
       },
       err => {
         console.log(err);
