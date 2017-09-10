@@ -1,17 +1,16 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-simple-process',
-  templateUrl: './simple-process.component.html',
-  styleUrls: ['./simple-process.component.css']
+  selector: 'app-homepage-simple-process',
+  templateUrl: './homepage-simple-process.component.html',
+  styleUrls: ['./homepage-simple-process.component.css']
 })
-export class SimpleProcessComponent implements OnInit {
+export class HomepageSimpleProcessComponent implements OnInit {
   @Input() simpleProcessData;
 
   constructor() { }
 
   ngOnInit() {
-    console.log(this.simpleProcessData);
     this.simpleProcessData.cards.items.sort(function(a, b) {
       return a.fields.orderby - b.fields.orderby;
     });

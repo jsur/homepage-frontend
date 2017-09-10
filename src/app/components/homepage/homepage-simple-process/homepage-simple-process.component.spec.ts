@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SimpleProcessComponent } from './simple-process.component';
+import { HomepageSimpleProcessComponent } from './homepage-simple-process.component';
 
 describe('SimpleProcessComponent', () => {
-  let component: SimpleProcessComponent;
-  let fixture: ComponentFixture<SimpleProcessComponent>;
+  let component: HomepageSimpleProcessComponent;
+  let fixture: ComponentFixture<HomepageSimpleProcessComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SimpleProcessComponent ]
+      declarations: [ HomepageSimpleProcessComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SimpleProcessComponent);
+    fixture = TestBed.createComponent(HomepageSimpleProcessComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
