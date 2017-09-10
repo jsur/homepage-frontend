@@ -1,0 +1,11 @@
+<div class="team-container">
+  <h2>{{teamData?.items[0].fields.header}}</h2>
+  <p class="header-desc">{{teamData?.items[0].fields.headerDescription}}</p>
+  <div class="team-card-container">
+    <div class="card" *ngFor="let card of teamData?.cards.items">
+      <img src="{{card.fields.imageUrl}}" alt="">
+      <p class="fullname">{{card.fields.fullName}}</p>
+      <p class="title">{{card.fields.title}}</p>
+    </div>
+  </div>
+</div>

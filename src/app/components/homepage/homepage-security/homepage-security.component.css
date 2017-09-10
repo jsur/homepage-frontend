@@ -9,10 +9,13 @@ h2 {
   text-transform: uppercase;
 }
 
+p {
+  letter-spacing: 0.7px;
+}
+
 .read-more {
   color: #2980ff;
   cursor: pointer;
-  letter-spacing: 0.7px;
 }
 
 .read-more span {
@@ -33,6 +36,8 @@ ul {
 li {
   text-align: left;
   margin-bottom: 1rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
 }
 
 .logos {

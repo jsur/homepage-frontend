@@ -1,11 +1,13 @@
 .in-beta-container {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
   text-align: center;
   background-color: #f9f9f9;
   min-height: 60vh;
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
-  padding: 2rem;
+  padding: 0 2rem 2rem 2rem;
 }
 
 h2 {

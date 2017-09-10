@@ -1,0 +1,65 @@
+.team-container {
+  border-top: 1px solid #e5e5e5;
+  background-color: #f9f9f9;
+  min-height: 50vh;
+  text-align: center;
+  color: #484848;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+.header-desc {
+  letter-spacing: 0.7px;
+}
+
+.team-card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  margin: 2rem;
+  font-family: 'Roboto Slab', serif;
+  width: 20%;
+}
+
+.fullname {
+  letter-spacing: 0.7px;
+}
+
+.title {
+  letter-spacing: 0.5px;
+  font-size: 1.2rem;
+}
+
+.card img {
+  border-radius: 50%;
+}
+
+/* Mobile first queries */
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+
+  .team-card-container {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 15rem;
+  }
+
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
