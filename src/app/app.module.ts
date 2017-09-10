@@ -16,6 +16,7 @@ import { FormsModule } from '@angular/forms';
 import { appRouting } from './app.routing';
 
 import { CmsContentService } from './services/cms-content.service';
+import { HomepageSecurityComponent } from './components/homepage/homepage-security/homepage-security.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { CmsContentService } from './services/cms-content.service';
     HomepageComparisonComponent,
     HomepageSimpleProcessComponent,
     HomepageCustomersSayComponent,
-    HomepageInBetaComponent
+    HomepageInBetaComponent,
+    HomepageSecurityComponent
   ],
   imports: [
     BrowserModule,

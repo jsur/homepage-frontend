@@ -1,0 +1,24 @@
+<div class="security-container">
+  <h2>{{securityData?.items[0].fields.header}}</h2>
+  <p>{{securityData?.items[0].fields.headerDescription}}</p>
+  <p class="read-more" (click)="toggleText()">Read more <span>&#8964;</span></p>
+  <div class="hidden-text hidden">
+    <ul>
+      <div *ngFor="let item of objectKeys(securityData.items[0].fields.fundsInformationList)">
+        <li>{{securityData.items[0].fields.fundsInformationList[item]}}</li>
+      </div>
+    </ul>
+    <div class="logos">
+      <div class="logo-div" *ngFor="let logo of securityData.items[0].fields.logos">
+        <img src="{{logo.url}}" alt="">
+      </div>
+    </div>
+    <p>{{securityData?.items[0].fields.iccDescription}}</p>
+    <ul>
+      <div *ngFor="let item of objectKeys(securityData.items[0].fields.iccInformationList)">
+        <li>{{securityData.items[0].fields.iccInformationList[item]}}</li>
+      </div>
+    </ul>
+    <img class="icc-logo" src="{{this.securityData.items[0].fields.iccLogo.url}}" alt="">
+  </div>
+</div>

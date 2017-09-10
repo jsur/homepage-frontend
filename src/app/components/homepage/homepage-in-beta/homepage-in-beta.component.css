@@ -68,10 +68,19 @@ button:disabled {
 }
 
 /* Larger than tablet */
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
+  p {
+    width: 60%;
+    margin: 2rem auto;
+  }
+}
 
 /* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+  p {
+    width: 40%;
+  }
+}
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
