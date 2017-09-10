@@ -1,0 +1,12 @@
+<div class="customers-say-container">
+  <h2>{{customersSayData?.items[0].fields.customersSayHeader}}</h2>
+  <div class="card-carousel-container">
+    <div class="card" *ngFor="let card of customersSayData.cards.items">
+      <img src="{{card.fields.customerImgUrl}}" alt="">
+      <div class="card-text-container">
+        <p class="quote">{{card.fields.customerQuote}}</p>
+        <p class="name-and-title">{{card.fields.customerNameAndTitle}}</p>
+      </div>
+    </div>
+  </div>
+</div>

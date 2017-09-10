@@ -13,6 +13,9 @@ import { CmsContentService } from './services/cms-content.service';
 import { HomepageWhatisComponent } from './components/homepage/homepage-whatis/homepage-whatis.component';
 import { HomepageComparisonComponent } from './components/homepage/homepage-comparison/homepage-comparison.component';
 import { HomepageSimpleProcessComponent } from './components/homepage/homepage-simple-process/homepage-simple-process.component';
+import { HomepageCustomersSayComponent } from './components/homepage/homepage-customers-say/homepage-customers-say.component';
+
+import { DragScrollModule } from 'angular2-drag-scroll';
 
 @NgModule({
   declarations: [
@@ -23,11 +26,13 @@ import { HomepageSimpleProcessComponent } from './components/homepage/homepage-s
     HomepageIconsComponent,
     HomepageWhatisComponent,
     HomepageComparisonComponent,
-    HomepageSimpleProcessComponent
+    HomepageSimpleProcessComponent,
+    HomepageCustomersSayComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
+    DragScrollModule,
     appRouting
   ],
   providers: [
