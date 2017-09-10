@@ -13,23 +13,10 @@
 }
 
 .card {
-  width: 60%;
-  height: 200px;
-  border-radius: 7px;
-  background-image: linear-gradient(to bottom, #53b7ff, #2980ff);
   margin: 2rem auto;
-  color: white;
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-
-.card-flipped {
-  background: white;
-}
-
-.flipside {
-  display: none;
 }
 
 .card-header {
@@ -37,14 +24,14 @@
   font-family: 'Roboto Slab', serif;
   font-size: 1.2rem;
   letter-spacing: 0.7px;
-  width: 30%;
+  width: 50%;
   margin: 2rem auto;
 }
 
 .card-orderby-circle {
   width: 4rem;
   padding: 0.8rem;
-  margin: 0 auto;
+  margin: 5rem auto 0 auto;
   border: 1.5px solid white;
   border-radius: 50%;
 }
@@ -52,6 +39,62 @@
 .card-orderby {
   font-size: 3.5rem;
 }
+
+/* Card flip styles */
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+	transform: rotateY(180deg);
+}
+
+.flip-container {
+  perspective: 1000px;
+}
+
+.flip-container,
+.front,
+.back {
+	width: 250px;
+	height: 250px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+  margin-bottom: 250px;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+  border-radius: 7px;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+  background-image: linear-gradient(to bottom, #53b7ff, #2980ff);
+  color: white;
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Card flip styles end */
 
 /* Mobile first queries */
 
@@ -62,7 +105,32 @@
 @media (min-width: 550px) {}
 
 /* Larger than tablet */
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
+
+  .simple-process-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .simple-process-container h2 {
+    width: 100%;
+  }
+
+  .flip-container,
+  .front,
+  .back {
+  	width: 200px;
+  	height: 200px;
+  }
+
+  .card-header {
+    width: 100%;
+  }
+
+}
 
 /* Larger than desktop */
 @media (min-width: 1000px) {}

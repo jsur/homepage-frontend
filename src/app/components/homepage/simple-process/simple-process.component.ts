@@ -17,8 +17,4 @@ export class SimpleProcessComponent implements OnInit {
     });
   }
 
-  toggleCardFlip(event) {
-    event.target.classList.toggle('card-flipped');
-  }
-
 }

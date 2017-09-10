@@ -1,15 +1,16 @@
 <div class="simple-process-container">
   <h2>{{simpleProcessData?.items[0].fields.processCardHeader}}</h2>
-  <div
-    class="card"
-    *ngFor="let card of simpleProcessData?.cards.items"
-    (mouseover)="toggleCardFlip($event)"
-    (mouseout)="toggleCardFlip($event)"
-    >
-    <div class="card-orderby-circle">
-      <span class="card-orderby">{{card.fields.orderby}}</span>
+  <div class="card flip-container" *ngFor="let card of simpleProcessData?.cards.items">
+    <div class="flipper">
+      <div class="front">
+        <div class="card-orderby-circle">
+          <span class="card-orderby">{{card.fields.orderby}}</span>
+        </div>
+        <p class="card-header">{{card.fields.cardHeader}}</p>
+      </div>
+      <div class="back">
+        <p>{{card.fields.cardFlipsideText}}</p>
+      </div>
     </div>
-    <p class="card-header">{{card.fields.cardHeader}}</p>
-    <p class="flipside">{{card.fields.cardFlipsideText}}</p>
   </div>
 </div>
