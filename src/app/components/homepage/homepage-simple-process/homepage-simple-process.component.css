@@ -135,4 +135,11 @@
 @media (min-width: 1000px) {}
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+  .simple-process-container {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+}

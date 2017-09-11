@@ -14,6 +14,11 @@
  text-align: center;
 }
 
+.product-card img {
+  width: 45px;
+  height: 45px;
+}
+
 .card-header {
   font-weight: bold;
 }
@@ -36,6 +41,7 @@
 @media (min-width: 750px) {
   .icons-container {
     flex-direction: row;
+    align-items: center;
   }
 }
 

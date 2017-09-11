@@ -28,7 +28,7 @@ p {
 }
 
 .in-beta-form input, button {
-  margin: 0.5rem;
+  margin: 0.7rem;
   height: 40px;
 }
 
@@ -63,7 +63,7 @@ button:disabled {
 /* Larger than phablet */
 @media (min-width: 550px) {
   .in-beta-form {
-    width: 350px;
+    width: 330px;
   }
 }
 

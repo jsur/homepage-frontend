@@ -66,4 +66,8 @@ td img {
 }
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+  table {
+    width: 40%;
+  }
+}

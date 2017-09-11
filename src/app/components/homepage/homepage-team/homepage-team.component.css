@@ -6,8 +6,13 @@
   color: #484848;
 }
 
+h2 {
+  margin-bottom: 0.4rem;
+}
+
 .header-desc {
   letter-spacing: 0.7px;
+  font-weight: bold;
 }
 
 .team-card-container {

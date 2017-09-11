@@ -1,12 +1,14 @@
 <div class="whatis-container">
-  <div class="whatis-content">
-    <h2>{{whatIsData.items[0].fields.whatisHeader}}</h2>
-    <img src="{{playButtonUrl}}" alt="">
-    <p>{{whatIsData.items[0].fields.whatisDescription}}</p>
-    <ul class="whatis-items">
-      <div *ngFor="let item of whatIsData.items[0].fields.whatisList">
-        <li class="whatis-item">{{item}}</li>
-      </div>
-    </ul>
+  <div class="overlay">
+    <div class="whatis-content">
+      <h2>{{whatIsData.items[0].fields.whatisHeader}}</h2>
+      <img src="{{playButtonUrl}}" alt="">
+      <p>{{whatIsData.items[0].fields.whatisDescription}}</p>
+      <ul class="whatis-items">
+        <div *ngFor="let item of whatIsData.items[0].fields.whatisList">
+          <li class="whatis-item">{{item}}</li>
+        </div>
+      </ul>
+    </div>
   </div>
 </div>

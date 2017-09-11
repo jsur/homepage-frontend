@@ -1,8 +1,19 @@
 .whatis-container {
-  background-image: linear-gradient(to bottom, #53b7ff, #2980ff);
-  min-height: 60vh;
+  background-image: url('../../../../assets/meeting.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 65vh;
   color: white;
   text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.overlay {
+  background-image: linear-gradient(to bottom, #53b7ff, #2980ff);
+  opacity: 0.9;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
