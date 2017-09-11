@@ -1,0 +1,9 @@
+<div class="footer-container">
+  <img class="logo" src="{{companyLogo}}" alt="">
+  <div class="terms-and-legal">
+    <div *ngFor="let item of footerData?.items[0].fields.footerLinks">
+      <p>{{item}}</p>
+    </div>
+  </div>
+  <p class="copyright">{{footerData?.items[0].fields.footerCopyright}}</p>
+</div>

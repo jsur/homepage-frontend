@@ -19,6 +19,7 @@ import { CmsContentService } from './services/cms-content.service';
 import { HomepageSecurityComponent } from './components/homepage/homepage-security/homepage-security.component';
 import { HomepageTeamComponent } from './components/homepage/homepage-team/homepage-team.component';
 import { HomepageContactComponent } from './components/homepage/homepage-contact/homepage-contact.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { HomepageContactComponent } from './components/homepage/homepage-contact
     HomepageInBetaComponent,
     HomepageSecurityComponent,
     HomepageTeamComponent,
-    HomepageContactComponent
+    HomepageContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

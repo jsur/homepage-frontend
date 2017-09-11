@@ -18,6 +18,7 @@ export class HomepageComponent implements OnInit {
   security: Object;
   team: Object;
   contact: Object;
+  footer: Object;
 
   constructor(private cmscontent: CmsContentService) { }
 
@@ -38,6 +39,7 @@ export class HomepageComponent implements OnInit {
         this.team['cards'] = data.teamCards;
         this.contact = data.contact;
         this.contact['phones'] = data.contactPhone;
+        this.footer = data.footer;
       },
       err => {
         console.log(err);
