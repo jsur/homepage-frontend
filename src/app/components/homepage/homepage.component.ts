@@ -17,6 +17,7 @@ export class HomepageComponent implements OnInit {
   inBeta: Object;
   security: Object;
   team: Object;
+  contact: Object;
 
   constructor(private cmscontent: CmsContentService) { }
 
@@ -35,6 +36,8 @@ export class HomepageComponent implements OnInit {
         this.security = data.security;
         this.team = data.teamHeader;
         this.team['cards'] = data.teamCards;
+        this.contact = data.contact;
+        this.contact['phones'] = data.contactPhone;
       },
       err => {
         console.log(err);

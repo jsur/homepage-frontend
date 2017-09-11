@@ -1,0 +1,26 @@
+.contact-container {
+  border-top: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  min-height: 30vh;
+  color: #484848;
+  text-align: center;
+  padding: 0 4rem 4rem 4rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+.header-desc {
+  margin-bottom: 3rem;
+}
+
+.email {
+  text-decoration: underline;
+  color: #2980ff;
+  margin-bottom: 2.5rem;
+}
+
+.phone-flag {
+  margin-left: 5px;
+}

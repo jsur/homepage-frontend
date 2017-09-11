@@ -11,7 +11,6 @@ export class HomepageTeamComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.teamData);
 
     // match image assets with the right items
 

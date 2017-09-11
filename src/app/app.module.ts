@@ -18,6 +18,7 @@ import { appRouting } from './app.routing';
 import { CmsContentService } from './services/cms-content.service';
 import { HomepageSecurityComponent } from './components/homepage/homepage-security/homepage-security.component';
 import { HomepageTeamComponent } from './components/homepage/homepage-team/homepage-team.component';
+import { HomepageContactComponent } from './components/homepage/homepage-contact/homepage-contact.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { HomepageTeamComponent } from './components/homepage/homepage-team/homep
     HomepageCustomersSayComponent,
     HomepageInBetaComponent,
     HomepageSecurityComponent,
-    HomepageTeamComponent
+    HomepageTeamComponent,
+    HomepageContactComponent
   ],
   imports: [
     BrowserModule,

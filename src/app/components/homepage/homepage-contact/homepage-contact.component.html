@@ -1,0 +1,12 @@
+<div class="contact-container">
+  <h2>{{contactData?.items[0].fields.header}}</h2>
+  <p class="header-desc">{{contactData?.items[0].fields.headerDescription}}</p>
+  <p class="email">{{contactData?.items[0].fields.email}}</p>
+  <div class="phones">
+    <div *ngFor="let phone of contactData?.phones.items">
+      <p class="phone-number">{{phone.fields.phoneNumber}}
+        <img class="phone-flag" src="{{phone.fields.phoneFlagUrl}}" alt="">
+      </p>
+    </div>
+  </div>
+</div>
