@@ -36,11 +36,11 @@ export class HomepageSecurityComponent implements OnInit {
     });
 
     // ICC logo
-    assetUrls.forEach(function(asset) {
+    assetUrls.forEach(asset => {
       if (asset.id === this.securityData.items[0].fields.iccLogo.sys.id) {
         this.securityData.items[0].fields.iccLogo['url'] = asset.url;
       }
-    }.bind(this));
+    });
 
   }
 

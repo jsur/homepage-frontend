@@ -20,7 +20,7 @@
 }
 
 table {
-  width: 50%;
+  width: 80%;
   margin: 1rem auto 4rem auto;
   border-collapse: collapse;
   border-spacing: 0;
@@ -44,3 +44,26 @@ td img {
   width: 16px;
   height: 16px;
 }
+
+/* Mobile first queries */
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+
+  table {
+    width: 50%;
+  }
+
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
