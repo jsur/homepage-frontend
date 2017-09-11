@@ -39,6 +39,8 @@ h2 {
 
 .card img {
   border-radius: 50%;
+  width: 108px;
+  height: 108px;
 }
 
 /* Mobile first queries */
