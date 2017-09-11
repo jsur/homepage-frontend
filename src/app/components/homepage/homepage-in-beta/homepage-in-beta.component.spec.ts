@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
 
 import { HomepageInBetaComponent } from './homepage-in-beta.component';
 
@@ -8,7 +9,8 @@ describe('HomepageInBetaComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HomepageInBetaComponent ]
+      declarations: [ HomepageInBetaComponent ],
+      imports: [FormsModule]
     })
     .compileComponents();
   }));

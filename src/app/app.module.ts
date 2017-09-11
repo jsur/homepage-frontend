@@ -8,6 +8,10 @@ import { HomepageComparisonComponent } from './components/homepage/homepage-comp
 import { HomepageSimpleProcessComponent } from './components/homepage/homepage-simple-process/homepage-simple-process.component';
 import { HomepageCustomersSayComponent } from './components/homepage/homepage-customers-say/homepage-customers-say.component';
 import { HomepageInBetaComponent } from './components/homepage/homepage-in-beta/homepage-in-beta.component';
+import { HomepageSecurityComponent } from './components/homepage/homepage-security/homepage-security.component';
+import { HomepageTeamComponent } from './components/homepage/homepage-team/homepage-team.component';
+import { HomepageContactComponent } from './components/homepage/homepage-contact/homepage-contact.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -16,10 +20,6 @@ import { FormsModule } from '@angular/forms';
 import { appRouting } from './app.routing';
 
 import { CmsContentService } from './services/cms-content.service';
-import { HomepageSecurityComponent } from './components/homepage/homepage-security/homepage-security.component';
-import { HomepageTeamComponent } from './components/homepage/homepage-team/homepage-team.component';
-import { HomepageContactComponent } from './components/homepage/homepage-contact/homepage-contact.component';
-import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
