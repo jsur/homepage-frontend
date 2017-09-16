@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { IconsCMSResponseWithAssets } from '../../../shared/models/icons/IconsCMSResponseWithAssets';
+import { IconsProductItemData } from '../../../shared/models/icons/IconsProductItemData';
 
 @Component({
   selector: 'app-homepage-icons',
@@ -6,11 +8,15 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./homepage-icons.component.css']
 })
 export class HomepageIconsComponent implements OnInit {
-  @Input() productDescData;
+  @Input() productDescData: IconsCMSResponseWithAssets;
+
+  productCards: Array<IconsProductItemData>;
 
   constructor() {}
 
   ngOnInit() {
+
+    this.productCards = this.productDescData.items;
 
     // match logo assets with the right items
 
@@ -29,7 +35,5 @@ export class HomepageIconsComponent implements OnInit {
         }
       });
     });
-
   }
-
 }

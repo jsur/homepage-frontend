@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CmsContentService } from '../../services/cms-content.service';
 
 import { HeaderCMSResponseWithAssets } from '../../shared/models/header/HeaderCMSResponseWithAssets';
+import { IconsCMSResponseWithAssets } from '../../shared/models/icons/IconsCMSResponseWithAssets';
 
 @Component({
   selector: 'app-homepage',
@@ -11,7 +12,7 @@ import { HeaderCMSResponseWithAssets } from '../../shared/models/header/HeaderCM
 export class HomepageComponent implements OnInit {
 
   header: HeaderCMSResponseWithAssets;
-  productDesc: Object;
+  productDesc: IconsCMSResponseWithAssets;
   whatIs: Object;
   comparison: Object;
   simpleProcess: Object;

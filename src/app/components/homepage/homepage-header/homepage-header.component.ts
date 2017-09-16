@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { HeaderCMSResponseWithAssets } from '../../../shared/models/header/HeaderCMSResponseWithAssets';
-import { HeaderItemData } from '../../../shared/models/header/HeaderItemData';
 
 @Component({
   selector: 'app-homepage-header',
