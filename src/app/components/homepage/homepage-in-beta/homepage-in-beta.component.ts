@@ -20,7 +20,10 @@ export class HomepageInBetaComponent {
       firstname: ['', Validators.required],
       lastname: ['', Validators.required],
       email: ['', Validators.email],
-      phone: ['', Validators.required]
+      phone: ['', [
+        Validators.required,
+        Validators.minLength(5)]
+      ]
     })
   }
 
@@ -28,5 +31,11 @@ export class HomepageInBetaComponent {
     console.log(this.newSubmitter.value);
     this.newSubmitter.reset();
   }
+
+  get firstname() { return this.newSubmitter.get('firstname'); }
+  get lastname() { return this.newSubmitter.get('lastname'); }
+  get email() { return this.newSubmitter.get('email'); }
+  get phone() { return this.newSubmitter.get('phone'); }
+
 
 }

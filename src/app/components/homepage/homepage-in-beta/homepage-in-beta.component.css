@@ -55,6 +55,13 @@ button:disabled {
   opacity: 0.5;
 }
 
+.form-validator-notice {
+  font-size: 1rem;
+  color: red;
+  margin: 0;
+  padding: 0;
+}
+
 /* Mobile first queries */
 
 /* Larger than mobile */

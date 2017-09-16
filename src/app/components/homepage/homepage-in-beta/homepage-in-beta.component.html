@@ -8,24 +8,28 @@
       placeholder="Name"
       formControlName="firstname"
       >
+    <span class="form-validator-notice" *ngIf="firstname.invalid && (firstname.dirty || firstname.touched)">First name is required.</span>
     <input
       type="text"
       name="lastname"
       placeholder="Surname"
       formControlName="lastname"
       >
+    <span class="form-validator-notice" *ngIf="lastname.invalid && (lastname.dirty || lastname.touched)">Last name is required.</span>
     <input
       type="email"
       name="email"
       placeholder="Email"
       formControlName="email"
       >
+    <span class="form-validator-notice" *ngIf="email.invalid && (email.dirty || email.touched)">Email is not valid.</span>
     <input
       type="phone"
       name="phone"
       placeholder="Phone number"
       formControlName="phone"
       >
+    <span class="form-validator-notice" *ngIf="phone.invalid && (phone.dirty || phone.touched)">Phone number is not long enough.</span>
     <button name="submit" [disabled]="!newSubmitter.valid">Request access</button>
   </form>
 </div>
