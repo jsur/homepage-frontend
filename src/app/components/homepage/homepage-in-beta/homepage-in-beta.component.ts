@@ -1,30 +1,32 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
-import { NewSubmitter } from '../../../shared/models/NewSubmitter';
+import { Component, Input } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-homepage-in-beta',
   templateUrl: './homepage-in-beta.component.html',
   styleUrls: ['./homepage-in-beta.component.css']
 })
-export class HomepageInBetaComponent implements OnInit {
+export class HomepageInBetaComponent {
   @Input() inBetaData;
 
-  newSubmitter: NewSubmitter = {
-    firstname: '',
-    lastname: '',
-    email: '',
-    phone: ''
+  newSubmitter: FormGroup;
+
+  constructor(private fb: FormBuilder) {
+    this.createForm();
   }
 
-  constructor() { }
-
-  ngOnInit() {
-
+  createForm() {
+    this.newSubmitter = this.fb.group({
+      firstname: ['', Validators.required],
+      lastname: ['', Validators.required],
+      email: ['', Validators.email],
+      phone: ['', Validators.required]
+    })
   }
 
-  submit(form: NgForm) {
-    form.reset();
+  onSubmit() {
+    console.log(this.newSubmitter.value);
+    this.newSubmitter.reset();
   }
 
 }

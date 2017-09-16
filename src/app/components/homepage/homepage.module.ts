@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { FooterComponent } from '../footer/footer.component';
@@ -22,6 +23,7 @@ import { CmsContentService } from '../../services/cms-content.service';
   imports: [
     CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpModule
   ],
   declarations: [

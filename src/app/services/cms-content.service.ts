@@ -16,13 +16,13 @@ export class CmsContentService {
 
   constructor(private http: Http) {}
 
-  homepageContent() {
+  homepageContent(): Observable<any> {
     return this.http.get(`${this.url}/homepage`)
       .map(res => res.json())
       .catch(this.handleError);
   }
 
-  handleError(e) {
+  handleError(e): Observable<any> {
     return Observable.throw(e.json().message);
   }
 
