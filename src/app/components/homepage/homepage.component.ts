@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CmsContentService } from '../../services/cms-content.service';
 
+import { HeaderCMSResponseWithAssets } from '../../shared/models/header/HeaderCMSResponseWithAssets';
+
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
@@ -8,7 +10,7 @@ import { CmsContentService } from '../../services/cms-content.service';
 })
 export class HomepageComponent implements OnInit {
 
-  header: Object;
+  header: HeaderCMSResponseWithAssets;
   productDesc: Object;
   whatIs: Object;
   comparison: Object;
