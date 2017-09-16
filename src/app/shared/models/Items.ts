@@ -1,6 +1,6 @@
 import { SysObject } from './SysObject';
 
-export class Items {
+export interface Items {
   fields: Object;
   sys: SysObject;
 }

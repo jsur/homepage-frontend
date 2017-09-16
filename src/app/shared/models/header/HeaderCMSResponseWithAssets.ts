@@ -1,7 +1,7 @@
 import { Includes } from '../Includes';
 import { HeaderItemData } from './HeaderItemData';
 
-export class HeaderCMSResponseWithAssets {
+export interface HeaderCMSResponseWithAssets {
   includes: Includes;
   items: Array<HeaderItemData>;
   limit: number;

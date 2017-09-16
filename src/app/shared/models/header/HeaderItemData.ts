@@ -1,6 +1,6 @@
 import { LinkedAsset } from '../LinkedAsset';
 
-export class HeaderItemData {
+export interface HeaderItemData {
   fields: {
     companyLogo: LinkedAsset;
     companyName: string;

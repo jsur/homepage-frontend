@@ -29,6 +29,7 @@ export class HomepageComponent implements OnInit {
       data => {
         this.header = data.header;
         this.productDesc = data.productDesc;
+        console.log(this.productDesc);
         this.whatIs = data.whatIs;
         this.comparison = data.comparison;
         this.simpleProcess = data.simpleProcessHeader;

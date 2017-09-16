@@ -1,4 +1,4 @@
-export class SysObject {
+export interface SysObject {
   createdAt: string;
   id: string;
   locale: string;

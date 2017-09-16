@@ -1,4 +1,4 @@
-export class NewSubmitter {
+export interface NewSubmitter {
   firstname: String;
   lastname: String;
   email: String;

@@ -1,6 +1,6 @@
 import { SysObject } from './SysObject';
 
-export class IncludesObject {
+export interface IncludesObject {
   fields: {
     description: string;
     file: {

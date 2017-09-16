@@ -1,5 +1,5 @@
 import { IncludesObject } from './IncludesObject';
 
-export class Includes {
+export interface Includes {
   Asset: Array<IncludesObject>;
 }
