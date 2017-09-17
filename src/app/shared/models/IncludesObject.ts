@@ -16,6 +16,6 @@ export interface IncludesObject {
       url: string;
     }
     title: string;
-  };
+  }
   sys: SysObject;
 }

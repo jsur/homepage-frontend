@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ComparisonCMSResponseWithAssets } from '../../../shared/models/comparison/ComparisonCMSResponseWithAssets';
 
 @Component({
   selector: 'app-homepage-comparison',
@@ -6,14 +7,16 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./homepage-comparison.component.css']
 })
 export class HomepageComparisonComponent implements OnInit {
-  @Input() comparisonData;
+  @Input() comparisonData: ComparisonCMSResponseWithAssets;
 
-  iconAvailableUrl = '';
-  iconNotAvailableUrl = '';
+  iconAvailableUrl: string;
+  iconNotAvailableUrl: string;
+  header: string;
 
   constructor() {}
 
   ngOnInit() {
+
     this.comparisonData.includes.Asset.forEach( item => {
       if (item.sys.id === '5gt6nKcYsgmoe0yWo0cCoe') {
         this.iconAvailableUrl = item.fields.file.url;
@@ -22,6 +25,8 @@ export class HomepageComparisonComponent implements OnInit {
         this.iconNotAvailableUrl = item.fields.file.url;
       }
     });
+
+    this.header = this.comparisonData.items[0].fields.header;
   }
 
 }

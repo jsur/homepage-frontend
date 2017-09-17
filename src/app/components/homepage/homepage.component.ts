@@ -4,6 +4,7 @@ import { CmsContentService } from '../../services/cms-content.service';
 import { HeaderCMSResponseWithAssets } from '../../shared/models/header/HeaderCMSResponseWithAssets';
 import { IconsCMSResponseWithAssets } from '../../shared/models/icons/IconsCMSResponseWithAssets';
 import { WhatIsCMSResponseWithAssets } from '../../shared/models/whatis/WhatIsCMSResponseWithAssets';
+import { ComparisonCMSResponseWithAssets } from '../../shared/models/comparison/ComparisonCMSResponseWithAssets';
 
 @Component({
   selector: 'app-homepage',
@@ -15,7 +16,7 @@ export class HomepageComponent implements OnInit {
   header: HeaderCMSResponseWithAssets;
   productDesc: IconsCMSResponseWithAssets;
   whatIs: WhatIsCMSResponseWithAssets;
-  comparison: Object;
+  comparison: ComparisonCMSResponseWithAssets;
   simpleProcess: Object;
   customersSay: Object;
   inBeta: Object;
