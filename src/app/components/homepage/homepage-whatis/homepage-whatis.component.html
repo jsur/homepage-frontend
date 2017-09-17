@@ -1,11 +1,11 @@
 <div class="whatis-container">
   <div class="overlay">
     <div class="whatis-content">
-      <h2>{{whatIsData.items[0].fields.whatisHeader}}</h2>
+      <h2>{{header}}</h2>
       <img src="{{playButtonUrl}}" alt="">
-      <p>{{whatIsData.items[0].fields.whatisDescription}}</p>
+      <p>{{description}}</p>
       <ul class="whatis-items">
-        <div *ngFor="let item of whatIsData.items[0].fields.whatisList">
+        <div *ngFor="let item of listItems">
           <li class="whatis-item">{{item}}</li>
         </div>
       </ul>

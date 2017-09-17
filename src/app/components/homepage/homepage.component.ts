@@ -3,6 +3,7 @@ import { CmsContentService } from '../../services/cms-content.service';
 
 import { HeaderCMSResponseWithAssets } from '../../shared/models/header/HeaderCMSResponseWithAssets';
 import { IconsCMSResponseWithAssets } from '../../shared/models/icons/IconsCMSResponseWithAssets';
+import { WhatIsCMSResponseWithAssets } from '../../shared/models/whatis/WhatIsCMSResponseWithAssets';
 
 @Component({
   selector: 'app-homepage',
@@ -13,7 +14,7 @@ export class HomepageComponent implements OnInit {
 
   header: HeaderCMSResponseWithAssets;
   productDesc: IconsCMSResponseWithAssets;
-  whatIs: Object;
+  whatIs: WhatIsCMSResponseWithAssets;
   comparison: Object;
   simpleProcess: Object;
   customersSay: Object;
@@ -30,7 +31,6 @@ export class HomepageComponent implements OnInit {
       data => {
         this.header = data.header;
         this.productDesc = data.productDesc;
-        console.log(this.productDesc);
         this.whatIs = data.whatIs;
         this.comparison = data.comparison;
         this.simpleProcess = data.simpleProcessHeader;

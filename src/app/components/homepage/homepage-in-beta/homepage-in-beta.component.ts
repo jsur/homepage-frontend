@@ -15,7 +15,7 @@ export class HomepageInBetaComponent {
     this.createForm();
   }
 
-  createForm() {
+  createForm(): void {
     this.newSubmitter = this.fb.group({
       firstname: ['', Validators.required],
       lastname: ['', Validators.required],
@@ -27,7 +27,7 @@ export class HomepageInBetaComponent {
     })
   }
 
-  onSubmit() {
+  onSubmit(): void {
     console.log(this.newSubmitter.value);
     this.newSubmitter.reset();
   }
