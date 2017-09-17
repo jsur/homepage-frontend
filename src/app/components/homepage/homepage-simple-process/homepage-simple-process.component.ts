@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { SimpleProcessCMSResponse } from '../../../shared/models/simple-process/SimpleProcessCMSResponse';
+import { CardObject } from '../../../shared/models/simple-process/CardObject';
 
 @Component({
   selector: 'app-homepage-simple-process',
@@ -6,7 +8,10 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./homepage-simple-process.component.css']
 })
 export class HomepageSimpleProcessComponent implements OnInit {
-  @Input() simpleProcessData;
+  @Input() simpleProcessData: SimpleProcessCMSResponse;
+
+  header: string;
+  cards: Array<CardObject>;
 
   constructor() { }
 
@@ -14,6 +19,9 @@ export class HomepageSimpleProcessComponent implements OnInit {
     this.simpleProcessData.cards.items.sort(function(a, b) {
       return a.fields.orderby - b.fields.orderby;
     });
+
+    this.header = this.simpleProcessData.items[0].fields.processCardHeader;
+    this.cards = this.simpleProcessData.cards.items;
   }
 
 }
