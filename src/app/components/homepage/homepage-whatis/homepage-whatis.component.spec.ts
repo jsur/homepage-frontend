@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HomepageWhatisComponent } from './homepage-whatis.component';
+import { whatIsDataMock } from './homepage-whatis.component.spec-mock-data';
 
 describe('HomepageWhatisComponent', () => {
   let component: HomepageWhatisComponent;
@@ -16,6 +17,7 @@ describe('HomepageWhatisComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(HomepageWhatisComponent);
     component = fixture.componentInstance;
+    component.whatIsData = whatIsDataMock;
     fixture.detectChanges();
   });
 

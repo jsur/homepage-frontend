@@ -7,8 +7,8 @@ export interface IconsProductItemData {
     cardHeader: string;
     cardIcon: {
       sys: LinkedAsset;
-      cardUrl: string;
     }
+    cardUrl: string;
   }
   sys: SysObject;
 }

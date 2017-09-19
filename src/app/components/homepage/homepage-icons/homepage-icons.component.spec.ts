@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HomepageIconsComponent } from './homepage-icons.component';
+import { productDescDataMock } from './homepage-icons.spec-mock-data';
 
 describe('HomepageIconsComponent', () => {
   let component: HomepageIconsComponent;
@@ -16,6 +17,7 @@ describe('HomepageIconsComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(HomepageIconsComponent);
     component = fixture.componentInstance;
+    component.productDescData = productDescDataMock;
     fixture.detectChanges();
   });
 
