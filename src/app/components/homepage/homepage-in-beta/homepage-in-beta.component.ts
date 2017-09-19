@@ -37,5 +37,4 @@ export class HomepageInBetaComponent {
   get email() { return this.newSubmitter.get('email'); }
   get phone() { return this.newSubmitter.get('phone'); }
 
-
 }

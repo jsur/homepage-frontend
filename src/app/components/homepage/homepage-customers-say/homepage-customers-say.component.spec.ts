@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HomepageCustomersSayComponent } from './homepage-customers-say.component';
+import { customersSayDataMock } from './homepage-customers-say.component.spec-mock-data';
 
 describe('HomepageCustomersSayComponent', () => {
   let component: HomepageCustomersSayComponent;
@@ -16,6 +17,7 @@ describe('HomepageCustomersSayComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(HomepageCustomersSayComponent);
     component = fixture.componentInstance;
+    component.customersSayData = customersSayDataMock;
     fixture.detectChanges();
   });
 

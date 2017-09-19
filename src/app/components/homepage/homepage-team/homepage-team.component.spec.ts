@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HomepageTeamComponent } from './homepage-team.component';
+import { teamDataMock } from './homepage-team.component.spec-mock-data';
 
 describe('HomepageTeamComponent', () => {
   let component: HomepageTeamComponent;
@@ -16,6 +17,7 @@ describe('HomepageTeamComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(HomepageTeamComponent);
     component = fixture.componentInstance;
+    component.teamData = teamDataMock;
     fixture.detectChanges();
   });
 

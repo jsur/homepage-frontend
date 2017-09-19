@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HomepageSimpleProcessComponent } from './homepage-simple-process.component';
+import { simpleProcessDataMock } from './homepage-simple-process.component.spec-mock-data';
 
 describe('SimpleProcessComponent', () => {
   let component: HomepageSimpleProcessComponent;
@@ -16,6 +17,7 @@ describe('SimpleProcessComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(HomepageSimpleProcessComponent);
     component = fixture.componentInstance;
+    component.simpleProcessData = simpleProcessDataMock;
     fixture.detectChanges();
   });
 

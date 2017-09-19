@@ -22,6 +22,7 @@ export class HomepageSimpleProcessComponent implements OnInit {
 
     this.header = this.simpleProcessData.items[0].fields.processCardHeader;
     this.cards = this.simpleProcessData.cards.items;
+
   }
 
 }

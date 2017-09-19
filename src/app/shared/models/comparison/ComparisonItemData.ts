@@ -3,7 +3,7 @@ import { SysObject } from '../SysObject';
 
 export interface ComparisonItemData {
   fields: {
-    boxIcons: [{ sys: LinkedAsset }]
+    boxIcons: Array<{ sys: LinkedAsset }>
     header: string;
   }
   sys: SysObject;

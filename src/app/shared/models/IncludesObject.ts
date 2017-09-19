@@ -2,7 +2,8 @@ import { SysObject } from './SysObject';
 
 export interface IncludesObject {
   fields: {
-    description: string;
+    title: string;
+    description?: string;
     file: {
       contentType: string;
       details: {
@@ -15,7 +16,6 @@ export interface IncludesObject {
       fileName: string;
       url: string;
     }
-    title: string;
   }
   sys: SysObject;
 }
