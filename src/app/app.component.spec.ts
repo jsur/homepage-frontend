@@ -17,6 +17,8 @@ import { FooterComponent } from './components/footer/footer.component';
 
 import { appRouting } from './app.routing';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 import { APP_BASE_HREF } from '@angular/common';
 
@@ -41,7 +43,8 @@ describe('AppComponent', () => {
       ],
       imports: [
         appRouting,
-        FormsModule
+        FormsModule,
+        ReactiveFormsModule
       ],
       providers: [
         {provide: APP_BASE_HREF, useValue : '/' }

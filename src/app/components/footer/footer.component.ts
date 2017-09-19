@@ -13,6 +13,7 @@ export class FooterComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log(this.footerData);
     this.companyLogo = this.footerData.includes.Asset[0].fields.file.url;
   }
 

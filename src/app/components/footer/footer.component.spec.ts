@@ -16,6 +16,28 @@ describe('FooterComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(FooterComponent);
     component = fixture.componentInstance;
+    component.footerData = {
+      includes: {
+        Asset: [
+          {
+            fields: {
+              file: {
+                url: 'https://www.coinsilium.com/images/consentio-company-logo.png'
+              }
+            }
+          }
+        ]
+      },
+      items: [
+        {
+          fields: {
+            footerLinks: ['Terms & Conditions', 'Legal'],
+            footerCopyright: '© Consentio Blockchain SL, 2017'
+
+          }
+        }
+      ]
+    }
     fixture.detectChanges();
   });
 

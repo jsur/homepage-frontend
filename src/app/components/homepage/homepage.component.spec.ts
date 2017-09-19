@@ -14,7 +14,7 @@ import { HomepageTeamComponent } from '../homepage/homepage-team/homepage-team.c
 import { HomepageContactComponent } from '../homepage/homepage-contact/homepage-contact.component';
 import { FooterComponent } from '../footer/footer.component';
 
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { CmsContentService } from '../../services/cms-content.service';
 import { HttpModule } from '@angular/http';
@@ -41,7 +41,7 @@ describe('HomepageComponent', () => {
         FooterComponent
       ],
       imports: [
-        FormsModule,
+        ReactiveFormsModule,
         HttpModule
       ],
       providers: [
