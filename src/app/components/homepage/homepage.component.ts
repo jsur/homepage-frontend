@@ -6,6 +6,7 @@ import { IconsCMSResponseWithAssets } from '../../shared/models/icons/IconsCMSRe
 import { WhatIsCMSResponseWithAssets } from '../../shared/models/whatis/WhatIsCMSResponseWithAssets';
 import { ComparisonCMSResponseWithAssets } from '../../shared/models/comparison/ComparisonCMSResponseWithAssets';
 import { SimpleProcessCMSResponse } from '../../shared/models/simple-process/SimpleProcessCMSResponse';
+import { CustomersSayCMSResponseWithAssets } from '../../shared/models/customers-say/CustomersSayCMSResponseWithAssets';
 
 @Component({
   selector: 'app-homepage',
@@ -19,7 +20,7 @@ export class HomepageComponent implements OnInit {
   whatIs: WhatIsCMSResponseWithAssets;
   comparison: ComparisonCMSResponseWithAssets;
   simpleProcess: SimpleProcessCMSResponse;
-  customersSay: Object;
+  customersSay: CustomersSayCMSResponseWithAssets;
   inBeta: Object;
   security: Object;
   team: Object;
